@@ -20,7 +20,7 @@ export class TabsViewModel extends Observable {
         }
     }
 
-    get getIconPath(): string {
+    get iconPath(): string {
         return isAndroid ? "res://" : "res://tabIcons/";
     }
 }

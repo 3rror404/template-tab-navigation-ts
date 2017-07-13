@@ -22,7 +22,7 @@
         To add a new TabView item, simply add a new <TabViewItem> component to the <TabView.items> collection.
         Assign the <TabViewItem> component a "title" that will be displayed as the text of the tab item button.
         -->
-        <TabViewItem title="Home" iconSource="{{ getIconPath + 'home'}}">
+        <TabViewItem title="Home" iconSource="{{ iconPath + 'home'}}">
           <TabViewItem.view>
             <!--
             You can declare the layout and components of each view inside the <TabViewItem.view> directly.
@@ -33,25 +33,25 @@
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem title="Browse" iconSource="{{ getIconPath + 'browse'}}">
+        <TabViewItem title="Browse" iconSource="{{ iconPath + 'browse'}}">
           <TabViewItem.view>
              <browse:BrowseView/>
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem title="Search" iconSource="{{ getIconPath + 'search'}}">
+        <TabViewItem title="Search" iconSource="{{ iconPath + 'search'}}">
           <TabViewItem.view>
              <search:SearchView/>
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem title="Featured" iconSource="{{ getIconPath + 'favorites'}}">
+        <TabViewItem title="Featured" iconSource="{{ iconPath + 'favorites'}}">
           <TabViewItem.view>
              <featured:FeaturedView/>
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem title="Settings" iconSource="{{ getIconPath + 'settings'}}">
+        <TabViewItem title="Settings" iconSource="{{ iconPath + 'settings'}}">
           <TabViewItem.view>
              <settings:SettingsView/>
           </TabViewItem.view>
