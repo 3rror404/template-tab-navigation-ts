@@ -19,7 +19,8 @@
     "appbuilder",
     "template",
     "tab",
-    "navigation"
+    "navigation",
+    "category-general"
   ],
   "repository": {
     "type": "git",
