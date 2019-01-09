@@ -1,0 +1,32 @@
+<Page class="page" navigatingTo="onNavigatingTo" shownModally="onShownModally"
+    loaded="onLoaded" xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <StackLayout>
+        <GridLayout rows="auto, *, auto">
+
+            <GridLayout row="0" rows="auto" columns="75,*,75" class="action-bar p-10">
+                <Button text="Close" class="text-left action-item" row="0"
+                    col="0" tap="tapClose"></Button>
+                <Label text="Choose Vehicle" class="text-center action-bar-title"
+                    row="0" col="1"></Label>
+            </GridLayout>
+
+            <ListView id="list-view" row="1" items="{{ vehicles }}" itemTap="onItemTap"
+                class="list-group">
+                <ListView.itemTemplate>
+                    <StackLayout class="list-item p-20">
+                        <GridLayout columns="40, *">
+                            <Image src="res://icon" col="0" height="40"
+                                class="img-circle image-outlined" />
+                            <StackLayout col="1" marginLeft="10">
+                                <Label text="car model" class="text-normal" />
+                                <Label text=" reg number" class="text-light" />
+                            </StackLayout>
+                        </GridLayout>
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+
+        </GridLayout>
+    </StackLayout>
+</Page>
